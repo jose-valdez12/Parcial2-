@@ -8,9 +8,10 @@ package transaccionbancarias;
  *
  * @author jvald
  */
-public class tarjetaCredito {
-protected int transacciones , retiro , deposito ,saldo,comprar,pagar,salir;
-float fondos =10000;
+public class tarjetaDebito {
+    protected int nombre , numeroTarjeta , deposito ,compras, saldo,salir;
+float fondos =5000;
+
 
 
 //Mostrar fondos 
@@ -18,17 +19,21 @@ public int saldo (int fondos ){
    return  fondos ;
    }
 
-
 // Solicitar cuánto se retira
-public int retirar (int retiro, int fondos){
-  System.out.println("ingrese la cantidad a retirar ");
-  return fondos-retiro; 
+public int llamado (int nombre){
+  System.out.println("bienvenido jose octavio");
+  return nombre ; 
+    }
+//solicita numero de tarjeta 
+public int num (int numeroTarjeta){
+  System.out.println("su numero de tarjeta es :0909-21-8874");
+  return numeroTarjeta ; 
     }
 
 //solicitar transaccion 
-public int envio (int transacciones, int fondos){
+public int envio (int compras, int fondos){
     System.out.println("de cuanto sera la transaccion");
-    return transacciones-fondos;
+    return compras-fondos;
 }
 
 // solicitar deposito 
@@ -36,15 +41,10 @@ public int ingreso (int deposito,int fondos){
     System.out.println("ingrese cuanto desea depositar ");
     return deposito+fondos;
 }
-// solicitar deposito 
-public int pago (int pagar,int fondos){
-    System.out.println("ingrese cuanto desea depositar ");
-    return pagar-fondos;}
-
 
 public int salida (int salir ){
     System.out.println("gracias por su consulta");
     return salir ;
 }
-        
+    
 }
