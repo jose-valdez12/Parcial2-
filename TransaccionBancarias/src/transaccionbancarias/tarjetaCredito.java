@@ -21,21 +21,22 @@ public int saldo1 (int saldo ){
 
 // Solicitar cuánto se retira
 public int retirar1 (int retirar2){
-  return retiro= fondos-retirar2; 
+  return retiro= fondos-retirar2;
+  
     }
 
 //solicitar transaccion 
 public int envio (int transacciones1){
-    return transacciones= transacciones1-fondos;
+    return transacciones= fondos+transacciones1;
 }
 
 // solicitar deposito 
 public int ingreso (int deposito1){
     return deposito= deposito1+fondos;
 }
-// solicitar deposito 
+// solicitar pago
 public int pago (int pagar1){
-    return pagar=pagar1-fondos;}
+    return pagar=fondos-pagar1;}
 
 
 public int salida (int salir1 ){

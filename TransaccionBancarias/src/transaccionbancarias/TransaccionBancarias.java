@@ -20,10 +20,15 @@ public class TransaccionBancarias {
        Scanner sc = new Scanner(System.in);
        boolean salir = false;
        int opcion; //Guardaremos la opcion del usuario
-   
+       
+       
+
+         
         
        while(!salir){
-            
+              System.out.println("ingrese su usuario");
+              String nombre=sc.nextLine();
+              
              
                System.out.println(" Bienvenido al cajero automatico");
              
@@ -36,7 +41,8 @@ public class TransaccionBancarias {
            switch(opcion){
 				case 1 -> {
                                     
-                                        
+                                        System.out.println("ingrese numero de tarjeta");
+                                        float num =sc.nextFloat();
                                         tarjetaCredito transaccionbancarias = new tarjetaCredito (); 
                                         
                                         System.out.println("Has seleccionado la primera opcion ");
@@ -57,56 +63,59 @@ public class TransaccionBancarias {
                                                 System.out.println("su total es :"+transaccionbancarias.fondos);
                                                 break;
                        }
-                                            case 3 -> {
-                                                System.out.println ("Ingrese la cantidad a retirar: Q");
+                                            case 2 -> {
+                                                System.out.println ("Ingrese la cantidad a retirar: Q ");
                                                 int retirar2=sc.nextInt();
-
                                                 
+                                  
                                                 System.out.println(transaccionbancarias.retirar1(retirar2));
-                                                System.out.println("su total es :"+transaccionbancarias.retiro);
+                                                System.out.println("su total es :Q "+transaccionbancarias.retiro);
+                                                break;
+                       }
+                                            case 3 -> {
+                                               System.out.println ("Ingrese la cantidad de la transaccion : Q");
+                                                int transacciones1=sc.nextInt();
+                                             
+                                                System.out.println(transaccionbancarias.envio(transacciones1));
+                                                System.out.println("su total es :Q"+transaccionbancarias.transacciones);
                                                 break;
                        }
                                             case 4 -> {
-                                                System.out.println ("Ingrese la cantidad de la transaccion : Q");
-                                                int transacciones1=sc.nextInt();
+                                                System.out.println ("Ingrese la cantidad de la deposito :Q");
+                                                int deposito1=sc.nextInt();
+                                             
                                                 
-     
-                                                System.out.println(transaccionbancarias.envio(transacciones1));
-                                                System.out.println("su total es :"+transaccionbancarias.transacciones);
+                                                System.out.println(transaccionbancarias.ingreso(deposito1));
+                                                System.out.println("su total es : Q"+transaccionbancarias.deposito);
                                                 break;
                        }
                                             case 5 -> {
-                                                System.out.println ("Ingrese la cantidad de la transaccion : Q");
-                                                int deposito1=sc.nextInt();
+                                               System.out.println ("Ingrese la cantidad de la pago : Q");
+                                                int pagar1=sc.nextInt();
                                                 
-                                                System.out.println(transaccionbancarias.ingreso(deposito1));
-                                                System.out.println("su total es :"+transaccionbancarias.deposito);
+                                                
+                                                System.out.println(transaccionbancarias.pago(pagar1));
+                                                System.out.println("su total es : Q"+transaccionbancarias.pagar);
                                                 break;
                        }
                                             case 6 -> {
-                                                System.out.println ("Ingrese la cantidad de la transaccion : Q");
-                                                int pagar1=sc.nextInt();
-                                                
-                                                System.out.println(transaccionbancarias.pago(pagar1));
-                                                System.out.println("su total es :"+transaccionbancarias.pagar);
-                                                break;
-                       }
-                                            case 7 -> {
-                                                System.out.println ("Ingrese la cantidad de la transaccion : Q");
+                                              
                                                 int salir1=sc.nextInt();
                                                 
-                                                System.out.println(transaccionbancarias.salida(salir1));
-                                                System.out.println("su total es :"+transaccionbancarias.salir);
+                                                
+                                                System.out.println("gracias por usar este cajero automatico  :"+transaccionbancarias.salir);
                                                 break;
                        }
                                         }
-                                    
+                                    break;
                }
 				case 2 -> {
+                                    
+                                    break;
                }
 			
-				default -> System.out.println("Número no reconocido");
-				}
+				
+				} break;
        }
     }
     }
