@@ -14,8 +14,8 @@ int fondos =10000;
 
 
 //Mostrar fondos 
-public int saldo1 (int fondos ){
-   return saldo = fondos ;
+public int saldo1 (int saldo ){
+   return fondos;
    }
 
 

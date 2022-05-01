@@ -26,24 +26,18 @@ public class TransaccionBancarias {
             
              
                System.out.println(" Bienvenido al cajero automatico");
+             
                System.out.println("1. TarjetaDeCredito 1");
                System.out.println("2. TarjetaDeDebito  2");
-                
-                   
-              System.out.println("elija una de las opciones:");
-           
-            
+               System.out.println("elija una de las opciones:");
               
                 opcion = sc.nextInt();
-                
-             tarjetaCredito transaccionbancarias = new tarjetaCredito ();
-           
-           
+            
            switch(opcion){
 				case 1 -> {
                                     
-                                       opcion = sc.nextInt();
                                         
+                                        tarjetaCredito transaccionbancarias = new tarjetaCredito (); 
                                         
                                         System.out.println("Has seleccionado la primera opcion ");
                                         System.out.println("1. consulta de saldo  1");
@@ -55,11 +49,13 @@ public class TransaccionBancarias {
                                         System.out.println("7.   retiro de dinero 7");
                                         
                                         
-                                        switch (opcion){
+                                       int entrar=sc.nextInt();
+                                        switch (entrar){
                                             case 1 -> {
                                                 System.out.println ("consulta de saldo");
                                     
-                                                System.out.println("su total es :"+transaccionbancarias.saldo);
+                                                System.out.println("su total es :"+transaccionbancarias.fondos);
+                                                break;
                        }
                                             case 3 -> {
                                                 System.out.println ("Ingrese la cantidad a retirar: Q");
@@ -68,6 +64,7 @@ public class TransaccionBancarias {
                                                 
                                                 System.out.println(transaccionbancarias.retirar1(retirar2));
                                                 System.out.println("su total es :"+transaccionbancarias.retiro);
+                                                break;
                        }
                                             case 4 -> {
                                                 System.out.println ("Ingrese la cantidad de la transaccion : Q");
@@ -76,6 +73,7 @@ public class TransaccionBancarias {
      
                                                 System.out.println(transaccionbancarias.envio(transacciones1));
                                                 System.out.println("su total es :"+transaccionbancarias.transacciones);
+                                                break;
                        }
                                             case 5 -> {
                                                 System.out.println ("Ingrese la cantidad de la transaccion : Q");
@@ -83,6 +81,7 @@ public class TransaccionBancarias {
                                                 
                                                 System.out.println(transaccionbancarias.ingreso(deposito1));
                                                 System.out.println("su total es :"+transaccionbancarias.deposito);
+                                                break;
                        }
                                             case 6 -> {
                                                 System.out.println ("Ingrese la cantidad de la transaccion : Q");
@@ -90,6 +89,7 @@ public class TransaccionBancarias {
                                                 
                                                 System.out.println(transaccionbancarias.pago(pagar1));
                                                 System.out.println("su total es :"+transaccionbancarias.pagar);
+                                                break;
                        }
                                             case 7 -> {
                                                 System.out.println ("Ingrese la cantidad de la transaccion : Q");
@@ -97,6 +97,7 @@ public class TransaccionBancarias {
                                                 
                                                 System.out.println(transaccionbancarias.salida(salir1));
                                                 System.out.println("su total es :"+transaccionbancarias.salir);
+                                                break;
                        }
                                         }
                                     
