@@ -9,41 +9,27 @@ package transaccionbancarias;
  * @author jvald
  */
 public class tarjetaDebito {
-    protected int nombre , numeroTarjeta , deposito ,compras, saldo,salir;
-float fondos =5000;
+protected int  deposito ,compras,enviar, saldo,salir;
+int  fondos =5000;
 
 
 
 //Mostrar fondos 
-public int saldo (int fondos ){
+public int saldo (int saldo1 ){
    return  fondos ;
    }
 
-// Solicitar cuánto se retira
-public int llamado (int nombre){
-  System.out.println("bienvenido jose octavio");
-  return nombre ; 
-    }
-//solicita numero de tarjeta 
-public int num (int numeroTarjeta){
-  System.out.println("su numero de tarjeta es :0909-21-8874");
-  return numeroTarjeta ; 
-    }
-
 //solicitar transaccion 
-public int envio (int compras, int fondos){
-    System.out.println("de cuanto sera la transaccion");
-    return compras-fondos;
+public int envio (int compras){
+   return enviar=fondos-compras;
 }
 
 // solicitar deposito 
-public int ingreso (int deposito,int fondos){
-    System.out.println("ingrese cuanto desea depositar ");
-    return deposito+fondos;
+public int ingreso (int deposito1){
+    return deposito=deposito1+fondos;
 }
 
-public int salida (int salir ){
-    System.out.println("gracias por su consulta");
+public int salida (int salir1 ){
     return salir ;
 }
     

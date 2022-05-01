@@ -99,10 +99,7 @@ public class TransaccionBancarias {
                                                 break;
                        }
                                             case 6 -> {
-                                              
-                                                int salir1=sc.nextInt();
-                                                
-                                                
+                            
                                                 System.out.println("gracias por usar este cajero automatico  :"+transaccionbancarias.salir);
                                                 break;
                        }
@@ -110,13 +107,56 @@ public class TransaccionBancarias {
                                     break;
                }
 				case 2 -> {
+                                     System.out.println("ingrese numero de tarjeta");
+                                        float numj =sc.nextFloat();
+                                        
+                                        tarjetaDebito transaccionbancarias = new tarjetaDebito (); 
+                                        
+                                        System.out.println("Has seleccionado la segunda  opcion ");
+                                        System.out.println("1. consulta de saldo     1");
+                                        System.out.println("2. consulta de compra    2");
+                                        System.out.println("3. realizar deposito     3");
+                                        System.out.println("4.   salir               4");
+                                        
+                                         int compuerta =sc.nextInt();
+                                         switch (compuerta){
+                                            case 1 -> {
+                                                System.out.println ("consulta de saldo");
                                     
-                                    break;
+                                                System.out.println("su total es :"+transaccionbancarias.fondos);
+                                                break;
+                       }
+                                            case 2 -> {
+                                                System.out.println ("Ingrese la cantidad de la compra : Q ");
+                                                int compras=sc.nextInt();
+                                                
+                                  
+                                                System.out.println(transaccionbancarias.envio(compras));
+                                                System.out.println("su total es :Q "+transaccionbancarias.enviar);
+                                                break;
+                       }
+                                            case 3 -> {
+                                               System.out.println ("Ingrese la cantidad del deposito  : Q");
+                                                int deposito1=sc.nextInt();
+                                             
+                                                System.out.println(transaccionbancarias.ingreso(deposito1));
+                                                System.out.println("su total es :Q"+transaccionbancarias.deposito);
+                                                break;
+                       }
+                                            case 4 -> {
+                                  
+                                                System.out.println("gracias por usar este cajero automatico  :"+transaccionbancarias.salir);
+                                                break;
+                       }
+                                         
+                            
                }
 			
 				
-				} break;
-       }
+				} 
+       }break;
     }
     }
+}
+    
 
