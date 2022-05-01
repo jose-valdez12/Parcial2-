@@ -9,42 +9,37 @@ package transaccionbancarias;
  * @author jvald
  */
 public class tarjetaCredito {
-protected int transacciones , retiro , deposito ,saldo,comprar,pagar,salir;
-float fondos =10000;
+public int transacciones , saldo, retiro , deposito ,comprar,pagar,salir;
+int fondos =10000;
 
 
 //Mostrar fondos 
-public int saldo (int fondos ){
-   return  fondos ;
+public int saldo1 (int fondos ){
+   return saldo = fondos ;
    }
 
 
 // Solicitar cuánto se retira
-public int retirar (int retiro, int fondos){
-  System.out.println("ingrese la cantidad a retirar ");
-  return fondos-retiro; 
+public int retirar1 (int retirar2){
+  return retiro= fondos-retirar2; 
     }
 
 //solicitar transaccion 
-public int envio (int transacciones, int fondos){
-    System.out.println("de cuanto sera la transaccion");
-    return transacciones-fondos;
+public int envio (int transacciones1){
+    return transacciones= transacciones1-fondos;
 }
 
 // solicitar deposito 
-public int ingreso (int deposito,int fondos){
-    System.out.println("ingrese cuanto desea depositar ");
-    return deposito+fondos;
+public int ingreso (int deposito1){
+    return deposito= deposito1+fondos;
 }
 // solicitar deposito 
-public int pago (int pagar,int fondos){
-    System.out.println("ingrese cuanto desea depositar ");
-    return pagar-fondos;}
+public int pago (int pagar1){
+    return pagar=pagar1-fondos;}
 
 
-public int salida (int salir ){
-    System.out.println("gracias por su consulta");
-    return salir ;
+public int salida (int salir1 ){
+    return salir=salir1 ;
 }
         
 }
