@@ -19,7 +19,7 @@ public int saldo (int saldo1 ){
    return  fondos ;
    }
 
-//solicitar transaccion 
+//solicitar compras
 public int envio (int compras){
    return enviar=fondos-compras;
 }
@@ -29,6 +29,7 @@ public int ingreso (int deposito1){
     return deposito=deposito1+fondos;
 }
 
+//solicitar salida
 public int salida (int salir1 ){
     return salir ;
 }

@@ -38,7 +38,7 @@ public int ingreso (int deposito1){
 public int pago (int pagar1){
     return pagar=fondos-pagar1;}
 
-
+//solicitar salida
 public int salida (int salir1 ){
     return salir=salir1 ;
 }
